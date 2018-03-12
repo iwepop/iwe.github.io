@@ -1,0 +1,150 @@
+#p1
+{
+font-style : chicago;
+font-size: 20pt;
+}
+
+#p2
+{
+margin-top: 30px;
+text-align: center;
+font-size: 32pt;
+font-style: italic;
+
+}
+
+#p3
+{
+margin-top: -10px;
+margin-left: 30px;
+font-size: 20pt;
+font-style: italic;
+text-decoration: underline;
+}
+
+#p4
+{
+margin-top: -10px;
+margin-left: 45px;
+font-size: 18pt;
+}
+
+#div1
+{
+align:center;
+}
+
+#div3
+{
+position:absolute;
+top: 126px;
+left: 600px;
+
+}
+
+a
+{
+	text-decoration: none;
+	color: green;
+	
+}
+
+a:hover
+	{
+		color: red;
+	}
+BODY {
+  perspective: 700px;
+  perspective-origin: center center;
+
+  }
+
+.side,
+.container {
+  width: 10em;
+  height: 10em;
+  }
+
+.container {
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+  }
+
+.side {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  border: .15em solid white;
+  border-radius: 3em;
+  transform-style: preserve-3d;
+  }
+  .side:before,
+  .side:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    transform: translateZ(2em) rotateZ(45deg);
+    }
+  .side:before {
+    width: 5em;
+    height: 5em;   
+    transform: translateZ(3em) rotateZ(45deg);  
+  }
+  .side:after {
+    width: 10em;
+    height: 10em;
+    transform: translateZ(2em) rotateZ(45deg);
+  }
+
+.back {
+  transform: translateZ(-5em) rotateY(180deg);
+  background: url(fire.jpg) center;
+  }
+
+.left {
+  transform: translateX(-5em) rotateY(-90deg);
+  background: url(earth.jpg) center;
+  }
+
+.right {
+  transform: translateX(5em) rotateY(90deg);
+  background: url(wind.jpg) center;
+  }
+
+.top {
+  transform: translateY(-5em) rotateX(90deg);
+  background: url(heaven.jpg) center;
+  }
+
+.bottom {
+  transform: translateY(5em) rotateX(-90deg);
+  background: url(evil.jpg) center;
+  }
+
+.front {
+  transform: translateZ(5em);
+  background: url(water.jpg) center;
+  }
+
+@keyframes rotate {
+  100% {
+    transform: rotateX(360deg) rotateY(-360deg) rotateZ(360deg);
+  }
+}
+
+// Helpers
+
+HTML, BODY {
+    height: 100%;
+}
+
+BODY {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
