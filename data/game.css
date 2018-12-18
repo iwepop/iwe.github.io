@@ -1,0 +1,37 @@
+.gstate {
+	color: #ffff22;
+	font-size:9pt;
+	font-family:Tahoma,Arial,Verdana,Helvetica;
+}
+
+.glife {
+	color: #22ff22;
+	font-size:9pt;
+	font-family:Tahoma,Arial,Verdana,Helvetica;
+}
+
+.gbutton {
+	font-family:Tahoma,Arial,Verdana,Helvetica;
+	font-size:9pt;
+}
+
+.gcontrol {
+	border:1px #aabbff solid;
+	font-size:9pt;
+	font-family:Tahoma,Arial,Verdana,Helvetica;
+	padding:5px;
+}
+
+.gtitle {
+	background-color: #ddffdd;
+	border:1px #99bb99 solid;
+	font-size:10pt;
+	font-family:Tahoma,Arial,Verdana,Helvetica;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.ghelp {
+	font-size:8pt;
+	font-family:Verdana,Helvetica,Tahoma,Arial;
+}

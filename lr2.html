@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Игра "Собиратель шаров"</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=UTF-8">
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<LINK REL="stylesheet" HREF="data/game.css">
+<NOSCRIPT>
+<CENTER><H1>Для игры, обязательно требуется наличие JavaScript !</H1></CENTER>
+</NOSCRIPT>
+<BODY STYLE="background-color:#ffffff;">
+
+<DIV ID="field" STYLE="border:1px #55afff solid;background-color:#1155aa;visibility:hidden;position:absolute;left:0px;top:0px;">
+</DIV>
+
+<CENTER>
+<IMG ID="logo" SRC="data/logo.jpg" /><BR /><BR />
+<SPAN ID="start" CLASS="gcontrol" STYLE="cursor:default;color:#000000;" onmouseout="this.style.color='#000000';this.style.backgroundColor='#ffffff'" onmouseover="this.style.color='#ffff55';this.style.backgroundColor='#440044'" onclick="start_game()">НАЧАТЬ ИГРАТЬ, КЛАВИША ENTER</SPAN><BR /><BR />
+<SPAN ID="help" CLASS="ghelp">
+<U>Описание игры:</U><BR />
+Ваша задача собрать все шарики<BR />
+<U>Управление игрой:</U><BR />
+Движение влево - клавиша стрелка-влево или клавиша <B>A</B><BR />
+Движение вправо - клавиша стрелка-вправо или клавиша <B>D</B><BR />
+Движение вверх по лестнице - клавиша стрелка-вверх или клавиша <B>W</B><BR />
+Движение вниз по лестнице - клавиша стрелка-вниз или клавиша <B>S</B><BR />
+Прыжок - клавиша <B>Del, Delete, Пробел</B><BR />
+Выход из игры - клавиша <B>Esc</B>
+</SPAN>
+</CENTER>
+
+<DIV ID="blocks" STYLE="border:0px;"></DIV>
+
+<IMG ID="user" SRC="" STYLE="position:absolute;left:10px;top:10px;visibility:hidden;" />
+<IMG ID="boom" SRC="data/boom.png" STYLE="position:absolute;left:10px;top:10px;visibility:hidden;" />
+<SPAN ID="state" CLASS="gstate" STYLE="position:absolute;left:7px;top:5px;visibility:hidden;"></SPAN>
+<SPAN ID="life"  CLASS="glife"  STYLE="position:absolute;left:97px;top:5px;visibility:hidden;"></SPAN>
+</BODY>
+
+<SCRIPT LANGUAGE="javascript" SRC="script/util.js" TYPE="text/javascript" CHARSET="UTF-8"></SCRIPT>
+<SCRIPT LANGUAGE="javascript" SRC="script/user.js" TYPE="text/javascript" CHARSET="UTF-8"></SCRIPT>
+<SCRIPT LANGUAGE="javascript" SRC="script/game.js" TYPE="text/javascript" CHARSET="UTF-8"></SCRIPT>
+</HTML>
