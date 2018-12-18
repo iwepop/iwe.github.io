@@ -34,6 +34,10 @@ font-size: 18pt;
 font-style : chicago;
 font-size: 20pt;
 }
+img
+{
+	margin-left: 15px;
+}
 
 #div1
 {
